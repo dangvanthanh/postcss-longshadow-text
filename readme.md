@@ -19,7 +19,7 @@ $ npm install [--save] postcss-longshadow-text
 ## Configure
 
 ```js
-postcss([require('postcss-tipsy')])
+postcss([require('postcss-longshadow-text')])
 ```
 
 See [Postcss](https://github.com/postcss/postcss) docs for examples for your environment.
