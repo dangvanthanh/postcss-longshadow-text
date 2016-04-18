@@ -1,3 +1,11 @@
+<h1 align="center">
+	<br>
+	<img width="846" src="https://raw.githubusercontent.com/dangvanthanh/postcss-longshadow-text/master/media/longshadow-text.jpg" alt="Long shadow text">
+	<br>
+	<br>
+	<br>
+</h1>
+
 # postcss-longshadow-text
 
 [![Build Status](https://travis-ci.org/dangvanthanh/postcss-longshadow-text.svg?branch=master)](https://travis-ci.org/dangvanthanh/postcss-longshadow-text)
