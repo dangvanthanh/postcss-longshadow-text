@@ -1,0 +1,34 @@
+{
+  "name": "postcss-longshadow-text",
+  "version": "1.0.0",
+  "description": "Postcss plugin for long shadow text",
+  "license": "MIT",
+  "repository": "dangvanthanh/postcss-longshadow-text",
+  "author": {
+    "name": "Dang Van Thanh",
+    "email": "dangvanthanh@dangthanh.org",
+    "url": "dangthanh.org"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "css",
+    "longshadow-text",
+    "postcss",
+    "postcss-plugin"
+  ],
+  "dependencies": {
+    "postcss": "^5.0.19"
+  },
+  "devDependencies": {
+    "ava": "^0.14.0",
+    "xo": "^0.14.0"
+  }
+}
