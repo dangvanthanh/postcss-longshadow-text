@@ -30,15 +30,19 @@ See [Postcss](https://github.com/postcss/postcss) docs for examples for your env
 
 ```css
 .foo {
-	longshadow-text: [direction] [size] [color];
+	longshadow-text: [direction] [size] [color] [type];
 }
 ```
 
 Examples
 
 ```
-.foo {
-	longshadow-text: top 70 #a13c32;
+.text-element {
+	longshadow-text: top 70 #A13C32 text;
+}
+
+.box-element {
+	longshadow-text: bottom 120 #702C70 box;
 }
 ```
 
@@ -49,6 +53,8 @@ Examples
 | direction  | Position of shadow text     | top, right, bottom, left, top-left, top-right, bttom-left, bottom-right |
 | size       | Size of shadow text         | Number such as 10, 20, 30                                               |
 | color      | Color of shadow text        | HEX, RGB, RGBA, HSL                                                     |
+| type       | what kind of shadow to add  | text, box                                                               |
+
 
 ## License
 
