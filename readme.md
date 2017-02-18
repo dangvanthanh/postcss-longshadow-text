@@ -48,13 +48,18 @@ Examples
 
 ### Options
 
-| Options    | Description                 | Value                                                                   |
-|------------|-----------------------------|-------------------------------------------------------------------------|
-| direction  | Position of shadow text     | top, right, bottom, left, top-left, top-right, bttom-left, bottom-right |
-| size       | Size of shadow text         | Number such as 10, 20, 30                                               |
-| color      | Color of shadow text        | HEX, RGB, RGBA, HSL                                                     |
-| type       | what kind of shadow to add  | text, box                                                               |
+| Options      | Description                 | Value                                                                   |
+|--------------|-----------------------------|-------------------------------------------------------------------------|
+| `direction`  | Position of shadow text     | `top`, `right`, `bottom`, `left`, `top-left`, `top-right`, `bottom-left`, `bottom-right` |
+| `size`       | Size of shadow text         | Number such as 10, 20, 30                                               |
+| `color`      | Color of shadow text        | HEX, RGB, RGBA, HSL                                                     |
+| `type`       | What kind of shadow to add  | `text` or `box`                                                         |
 
+## Team
+
+[![Dang Van Thanh](https://avatars3.githubusercontent.com/u/2674850?v=3&s=100)](https://github.com/dangvanthanh) | [![Sarah Wever](https://avatars1.githubusercontent.com/u/4307721?v=3&s=100)](https://github.com/sweves)
+---|---
+[Dang Van Thanh](https://github.com/dangvanthanh) | [Sarah Wever](https://github.com/sweves)
 
 ## License
 
