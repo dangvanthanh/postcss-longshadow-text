@@ -11,6 +11,7 @@ module.exports = postcss.plugin(pluginName, function (opts) {
 			var cssDirection = sizes[0];
 			var cssSize = parseInt(sizes[1], 10);
 			var cssColor = sizes[2];
+			var cssType = sizes[3];
 			var cssTextshadow = '';
 
 			for (var i = 0; i < cssSize; i++) {
@@ -35,10 +36,15 @@ module.exports = postcss.plugin(pluginName, function (opts) {
 
 			cssTextshadow = cssTextshadow.slice(0, -1);
 
-			decl.cloneBefore({
-				prop: 'text-shadow', value: cssTextshadow
-			});
-
+			if (cssType === 'text') {
+				decl.cloneBefore({
+					prop: 'text-shadow', value: cssTextshadow
+				});
+			} else if (cssType === 'box') {
+				decl.cloneBefore({
+					prop: 'box-shadow', value: cssTextshadow
+				});
+			}
 			decl.remove();
 		});
 	};
