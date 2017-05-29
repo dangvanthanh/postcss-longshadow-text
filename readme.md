@@ -57,9 +57,9 @@ Examples
 
 ## Team
 
-[![Dang Van Thanh](https://avatars3.githubusercontent.com/u/2674850?v=3&s=100)](https://github.com/dangvanthanh) | [![Sarah Wever](https://avatars1.githubusercontent.com/u/4307721?v=3&s=100)](https://github.com/sweves)
----|---
-[Dang Van Thanh](https://github.com/dangvanthanh) | [Sarah Wever](https://github.com/sweves)
+[![Dang Van Thanh](https://avatars3.githubusercontent.com/u/2674850?v=3&s=100)](https://github.com/dangvanthanh) |
+---|
+[Dang Van Thanh](https://github.com/dangvanthanh) |
 
 ## License
 
