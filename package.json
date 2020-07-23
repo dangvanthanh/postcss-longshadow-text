@@ -8,7 +8,7 @@
   "author": {
     "name": "Dang Van Thanh",
     "email": "dangvanthanh@dangthanh.org",
-    "url": "dangthanh.org"
+    "url": "https://dangthanh.org"
   },
   "engines": {
     "node": ">=0.10.0"
@@ -26,9 +26,9 @@
     "postcss-plugin"
   ],
   "dependencies": {
-    "postcss": "^6.0.1"
+    "postcss": "^7.0.32"
   },
   "devDependencies": {
-    "tape": "^4.6.3"
+    "tape": "^5.0.1"
   }
 }
