@@ -1,22 +1,26 @@
-# postcss-longshadow-text
+# PostCSS Long Shadow Text
 
-[![Build Status](https://travis-ci.org/dangvanthanh/postcss-longshadow-text.svg?branch=master)](https://travis-ci.org/dangvanthanh/postcss-longshadow-text)
-
-> Postcss plugin for long shadow text
+> PostCSS plugin for long shadow text
 
 ![](screenshot.png)
 
 ## Install
 
 ```
-$ npm install [--save] postcss-longshadow-text
+$ npm install --save postcss-longshadow-text
 ```
 
 
 ## Configure
 
+Add the plugin to plugin list
+
 ```js
-postcss([require('postcss-longshadow-text')])
+module.exports = {
+	plugins: {
+		require('postcss-longshadow-text')
+	}
+}
 ```
 
 See [Postcss](https://github.com/postcss/postcss) docs for examples for your environment.
@@ -35,11 +39,11 @@ Examples
 
 ```
 .text-element {
-	longshadow-text: top 70 #A13C32 text;
+	longshadow-text: top 70 #a13c32 text;
 }
 
 .box-element {
-	longshadow-text: bottom 120 #702C70 box;
+	longshadow-text: bottom 120 #702c70 box;
 }
 ```
 
