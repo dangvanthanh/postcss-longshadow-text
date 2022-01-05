@@ -10,7 +10,6 @@
 $ npm install --save postcss-longshadow-text
 ```
 
-
 ## Configure
 
 Add the plugin to plugin list
