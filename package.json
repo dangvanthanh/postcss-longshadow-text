@@ -14,7 +14,8 @@
     "node": ">=10.0"
   },
   "scripts": {
-    "test": "jest-ci --coverage"
+    "test": "jest-ci --coverage",
+    "prepare": "husky install"
   },
   "files": [
     "index.js",
@@ -28,30 +29,21 @@
     "postcss-plugin"
   ],
   "peerDependencies": {
-    "postcss": "^8.2.1"
+    "postcss": "^8.4.5"
   },
   "devDependencies": {
-    "husky": "^6.0.0",
-    "jest": "^26.6.3",
+    "@dangvanthanh/prettier-config": "^1.0.0",
+    "husky": "^7.0.4",
+    "jest": "^27.4.7",
     "jest-ci": "^0.1.1",
-    "lint-staged": "^11.0.0",
-    "postcss": "^8.2.15",
-    "prettier": "^2.3.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "lint-staged": "^12.1.5",
+    "postcss": "^8.4.5",
+    "prettier": "^2.5.1"
   },
   "lint-staged": {
     "*.js": [
       "prettier --write"
     ]
   },
-  "prettier": {
-    "printWidth": 100,
-    "trailingComma": "es5",
-    "semi": false,
-    "singleQuote": true
-  }
+  "prettier": "@dangvanthanh/prettier-config"
 }
