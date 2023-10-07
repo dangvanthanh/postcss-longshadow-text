@@ -1,56 +1,29 @@
-function process(decl, { list }) {
-	const sizes = list.space(decl.value)
-	const cssDirection = sizes[0]
-	const cssSize = parseInt(sizes[1], 10)
-	const cssColor = sizes[2]
-	const cssType = sizes[3]
-	let cssShadows = []
-	let cssTextshadow = ''
-
-	for (let i = 0; i < cssSize; i++) {
-		if (cssDirection === 'top') {
-			cssShadows.push(`0 ${-i}px 0 ${cssColor}`)
-		} else if (cssDirection === 'right') {
-			cssShadows.push(`${i}px 0 0 ${cssColor}`)
-		} else if (cssDirection === 'bottom') {
-			cssShadows.push(`0 ${i}px 0 ${cssColor}`)
-		} else if (cssDirection === 'left') {
-			cssShadows.push(`${-i}px 0 0 ${cssColor}`)
-		} else if (cssDirection === 'top-left') {
-			cssShadows.push(`${-i}px ${-i}px 0 ${cssColor}`)
-		} else if (cssDirection === 'top-right') {
-			cssShadows.push(`${i}px ${i}px 0 ${cssColor}`)
-		} else if (cssDirection === 'bottom-left') {
-			cssShadows.push(`${-i}px ${i}px 0 ${cssColor}`)
-		} else if (cssDirection === 'bottom-right') {
-			cssShadows.push(`${i}px ${i}px 0 ${cssColor}`)
-		}
+var G = (k, q) => () => (q || k((q = { exports: {} }).exports, q), q.exports)
+var I = G((K, B) => {
+	var H = function (k, { list: q }) {
+		const v = q.space(k.value),
+			g = v[0],
+			F = parseInt(v[1], 10),
+			j = v[2],
+			E = v[3]
+		let b = [],
+			A = ''
+		for (let f = 0; f < F; f++)
+			if (g === 'top') b.push(`0 ${-f}px 0 ${j}`)
+			else if (g === 'right') b.push(`${f}px 0 0 ${j}`)
+			else if (g === 'bottom') b.push(`0 ${f}px 0 ${j}`)
+			else if (g === 'left') b.push(`${-f}px 0 0 ${j}`)
+			else if (g === 'top-left') b.push(`${-f}px ${-f}px 0 ${j}`)
+			else if (g === 'top-right') b.push(`${f}px ${f}px 0 ${j}`)
+			else if (g === 'bottom-left') b.push(`${-f}px ${f}px 0 ${j}`)
+			else if (g === 'bottom-right') b.push(`${f}px ${f}px 0 ${j}`)
+		if (((A = b.join(',')), E === 'text')) k.cloneBefore({ prop: 'text-shadow', value: A })
+		else if (E === 'box') k.cloneBefore({ prop: 'box-shadow', value: A })
+		k.remove()
 	}
-
-	cssTextshadow = cssShadows.join(',')
-
-	if (cssType === 'text') {
-		decl.cloneBefore({
-			prop: 'text-shadow',
-			value: cssTextshadow,
-		})
-	} else if (cssType === 'box') {
-		decl.cloneBefore({
-			prop: 'box-shadow',
-			value: cssTextshadow,
-		})
+	B.exports = () => {
+		return { postcssPlugin: 'postcss-longshadow-text', Declaration: { 'longshadow-text': H } }
 	}
-
-	decl.remove()
-}
-
-module.exports = () => {
-	return {
-		postcssPlugin: 'postcss-longshadow-text',
-		Declaration: {
-			'longshadow-text': process,
-		},
-	}
-}
-
-module.exports.postcss = true
+	B.exports.postcss = !0
+})
+export default I()
